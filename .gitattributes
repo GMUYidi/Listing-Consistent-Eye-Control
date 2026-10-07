@@ -1,0 +1,2 @@
+# Preserve released bytes so SHA-256 checks are identical after clone.
+* -text

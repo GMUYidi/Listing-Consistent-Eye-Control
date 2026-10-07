@@ -1,0 +1,27 @@
+{
+  "purpose": "Symbolic identity checks and synthetic numerical spot checks only; no experimental data generated.",
+  "sympy_version": "1.14.0",
+  "checks": {
+    "T_is_space_frame_rotation_derivative": true,
+    "six_state_dynamics_match_T": true,
+    "Listing_first_derivative_psi": true,
+    "Listing_first_derivative_theta": true,
+    "Listing_second_derivative": true,
+    "acceleration_compatibility_residual": true,
+    "torque_compatibility": true,
+    "reduced_f_and_G": true,
+    "determinant_identity": true,
+    "G_determinant": true,
+    "G_inverse": true,
+    "expanded_inverse_torques": true,
+    "closed_loop_accelerations": true,
+    "Euler_generalized_torque": true
+  },
+  "synthetic_samples": 200,
+  "maximum_G_inverse_residual": 6.661338147750939e-16,
+  "maximum_closed_loop_acceleration_residual_rad_s2": 3.637978807091713e-12,
+  "compatibility_residual": "(tau_phi*(-cos(psi)*cos(theta) - 1) + tau_psi*sin(theta) - tau_theta*sin(psi)*cos(theta))/(I_0*(cos(psi)*cos(theta) + 1))",
+  "G_determinant": "1/(I_0**2*cos(theta))",
+  "G_inverse_latex": "\\left[\\begin{matrix}\\frac{I_{0} \\left(\\cos{\\left(\\psi \\right)} + \\cos{\\left(\\theta \\right)}\\right) \\cos{\\left(\\theta \\right)}}{\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1} & - \\frac{I_{0} \\sin{\\left(\\psi \\right)} \\sin{\\left(\\theta \\right)}}{\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1}\\\\\\frac{I_{0} \\sin{\\left(\\psi \\right)} \\sin{\\left(\\theta \\right)} \\cos{\\left(\\theta \\right)}}{\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1} & \\frac{I_{0} \\left(\\cos{\\left(\\psi \\right)} + \\cos{\\left(\\theta \\right)}\\right)}{\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1}\\end{matrix}\\right]",
+  "expanded_torques_latex": "\\left[\\begin{matrix}I_{0} \\left(\\frac{v_{1} \\left(\\cos{\\left(\\psi \\right)} + \\cos{\\left(\\theta \\right)}\\right) \\cos{\\left(\\theta \\right)}}{\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1} - \\frac{v_{2} \\sin{\\left(\\psi \\right)} \\sin{\\left(\\theta \\right)}}{\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1} - \\frac{\\left(\\psi_{dot}^{2} \\sin{\\left(\\theta \\right)} + \\psi_{dot} \\theta_{dot} \\sin{\\left(\\psi \\right)}\\right) \\sin{\\left(\\psi \\right)} \\sin{\\left(\\theta \\right)} \\cos{\\left(\\theta \\right)}}{\\left(\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1\\right)^{2}} - \\frac{\\left(\\psi_{dot} \\theta_{dot} \\left(\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 2\\right) \\sin{\\left(\\theta \\right)} + \\theta_{dot}^{2} \\sin{\\left(\\psi \\right)}\\right) \\left(\\cos{\\left(\\psi \\right)} + \\cos{\\left(\\theta \\right)}\\right)}{\\left(\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1\\right)^{2}}\\right)\\\\I_{0} \\left(\\frac{v_{1} \\sin{\\left(\\psi \\right)} \\sin{\\left(\\theta \\right)} \\cos{\\left(\\theta \\right)}}{\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1} + \\frac{v_{2} \\left(\\cos{\\left(\\psi \\right)} + \\cos{\\left(\\theta \\right)}\\right)}{\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1} + \\frac{\\left(\\psi_{dot}^{2} \\sin{\\left(\\theta \\right)} + \\psi_{dot} \\theta_{dot} \\sin{\\left(\\psi \\right)}\\right) \\left(\\cos{\\left(\\psi \\right)} + \\cos{\\left(\\theta \\right)}\\right) \\cos{\\left(\\theta \\right)}}{\\left(\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1\\right)^{2}} - \\frac{\\left(\\psi_{dot} \\theta_{dot} \\left(\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 2\\right) \\sin{\\left(\\theta \\right)} + \\theta_{dot}^{2} \\sin{\\left(\\psi \\right)}\\right) \\sin{\\left(\\psi \\right)} \\sin{\\left(\\theta \\right)}}{\\left(\\cos{\\left(\\psi \\right)} \\cos{\\left(\\theta \\right)} + 1\\right)^{2}}\\right)\\end{matrix}\\right]"
+}

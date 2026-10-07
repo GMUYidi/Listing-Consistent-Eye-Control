@@ -1,0 +1,6 @@
+# Python helpers and validation; the numerical figure drivers use MATLAB.
+numpy==2.2.6
+sympy==1.14.0
+pypdf==6.10.0
+scipy==1.14.0
+matplotlib==3.10.1

@@ -1,0 +1,114 @@
+{
+  "python": "3.12.0",
+  "numpy": "2.2.6",
+  "scipy": "1.14.0",
+  "matplotlib": "3.10.1",
+  "solver": "scipy.integrate.solve_ivp/RK45",
+  "rtol": 1e-10,
+  "atol": 1e-12,
+  "max_step_s": 0.001,
+  "kp_s_minus2": [
+    3725.0,
+    4100.0
+  ],
+  "kd_s_minus1": [
+    100.0,
+    100.0
+  ],
+  "tau_ref_s": 0.02,
+  "initial_yaw_pitch_deg": [
+    0.0,
+    0.0
+  ],
+  "initial_yaw_pitch_rates_deg_s": [
+    0.0,
+    0.0
+  ],
+  "target_rule": "median of final ceil(15% of saved samples), at least 3, minus first saved value",
+  "comparison_records": [
+    {
+      "comparison_id": "comparison_01",
+      "participant_id": "participant_01",
+      "source_samples": 4401,
+      "selected_samples": 110,
+      "source_segment_numeric_equality": true,
+      "target_yaw_deg": -28.280909419059753,
+      "target_pitch_deg": 10.944865226745605,
+      "tail_samples": 17,
+      "solver_function_evaluations": 3608,
+      "actual_max_accepted_step_s": 0.0010000000000000009,
+      "applied_extra_time_shift_s": 0.0,
+      "historical_figure6_exact_reproduction": false
+    },
+    {
+      "comparison_id": "comparison_02",
+      "participant_id": "participant_02",
+      "source_samples": 1101,
+      "selected_samples": 123,
+      "source_segment_numeric_equality": true,
+      "target_yaw_deg": -21.956689834594727,
+      "target_pitch_deg": 0.7364921569824219,
+      "tail_samples": 19,
+      "solver_function_evaluations": 3824,
+      "actual_max_accepted_step_s": 0.0010000000000000009,
+      "applied_extra_time_shift_s": 0.0,
+      "historical_figure6_exact_reproduction": false
+    },
+    {
+      "comparison_id": "comparison_03",
+      "participant_id": "participant_01",
+      "source_samples": 4401,
+      "selected_samples": 110,
+      "source_segment_numeric_equality": true,
+      "target_yaw_deg": -28.613215625286102,
+      "target_pitch_deg": -23.0544376373291,
+      "tail_samples": 17,
+      "solver_function_evaluations": 3602,
+      "actual_max_accepted_step_s": 0.0010000000000000009,
+      "applied_extra_time_shift_s": 0.0,
+      "historical_figure6_exact_reproduction": false
+    },
+    {
+      "comparison_id": "comparison_04",
+      "participant_id": "participant_02",
+      "source_samples": 880,
+      "selected_samples": 127,
+      "source_segment_numeric_equality": true,
+      "target_yaw_deg": -0.5678510665893555,
+      "target_pitch_deg": 14.884201526641846,
+      "tail_samples": 20,
+      "solver_function_evaluations": 3992,
+      "actual_max_accepted_step_s": 0.0010000000000000009,
+      "applied_extra_time_shift_s": 0.0,
+      "historical_figure6_exact_reproduction": false
+    },
+    {
+      "comparison_id": "comparison_05",
+      "participant_id": "participant_01",
+      "source_samples": 4400,
+      "selected_samples": 126,
+      "source_segment_numeric_equality": true,
+      "target_yaw_deg": 27.349240622483194,
+      "target_pitch_deg": 21.772401809692383,
+      "tail_samples": 19,
+      "solver_function_evaluations": 4058,
+      "actual_max_accepted_step_s": 0.0010000000000000009,
+      "applied_extra_time_shift_s": 0.0,
+      "historical_figure6_exact_reproduction": false
+    },
+    {
+      "comparison_id": "comparison_06",
+      "participant_id": "participant_01",
+      "source_samples": 4401,
+      "selected_samples": 331,
+      "source_segment_numeric_equality": true,
+      "target_yaw_deg": 32.3560289144516,
+      "target_pitch_deg": -21.537280082702637,
+      "tail_samples": 50,
+      "solver_function_evaluations": 9626,
+      "actual_max_accepted_step_s": 0.0010000000000000009,
+      "applied_extra_time_shift_s": 0.0,
+      "historical_figure6_exact_reproduction": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "purpose": "Deterministic repository rerun; not historical random-state recovery",
+  "seed": 2.0261007E+7,
+  "generator": "twister",
+  "matlab_version": "23.2.0.2428915 (R2023b) Update 4",
+  "matlab_release": "2023b",
+  "optimization_toolbox_available": true,
+  "findpeaks_available": true,
+  "selected_branch": "underdamp",
+  "random_starts_per_stage": 20
+}

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite this versioned data and code release when reusing these materials. The associated manuscript is not yet assigned a publication DOI."
+type: software
+title: "Data and code for Listing-Consistent Reduced-Order Dynamics and Nonlinear Feedback Control of Eye Movements"
+version: 1.0.0
+date-released: 2026-10-07
+authors:
+  - family-names: Huang
+    given-names: Yidi
+  - family-names: Wei
+    given-names: Qi
+  - family-names: Sanders
+    given-names: Quentin
+  - family-names: Yao
+    given-names: Ningshi
+repository-code: "https://github.com/GMUYidi/Listing-Consistent-Eye-Control"
+url: "https://github.com/GMUYidi/Listing-Consistent-Eye-Control/releases/tag/v1.0.0"
+keywords:
+  - eye movements
+  - Listing's Law
+  - Half-Angle Rule
+  - nonlinear control
+  - biomimetics

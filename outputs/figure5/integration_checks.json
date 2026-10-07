@@ -1,0 +1,100 @@
+{
+  "mass_kg": 0.0075,
+  "radius_m": 0.015,
+  "I0_kg_m2": 6.75E-7,
+  "nominal_max_listing_error_deg": 3.445212612201448E-10,
+  "nominal_max_H_rad_s": 4.3530961821303116E-11,
+  "nominal_max_h_tau_Nm": 5.2939559203393771E-23,
+  "refined_max_listing_error_deg": 1.3807583010903491E-12,
+  "refinement_max_angle_change_deg": 3.4313970778038409E-10,
+  "final_angles_deg": [
+    -28.69999999952201,
+    10.799999999540121,
+    -2.7705947074993063
+  ],
+  "final_Listing_roll_deg": -2.7705947078438276,
+  "nonzero_initial_roll_offset_preservation_error_rad": 2.3536728122053319E-14,
+  "eccentric_max_listing_error_deg": 1.0046577100072884E-12,
+  "component_equation_max_error_rad_s2": 4.5474735088646412E-13,
+  "integration_convergence": [
+    {
+      "step_s": 0.0001,
+      "max_Listing_error_deg": 0.0084710248353345348,
+      "max_H_rad_s": 0.0031042908001951393,
+      "max_angle_difference_from_ode45_deg": 0.024153007042174379
+    },
+    {
+      "step_s": 5E-5,
+      "max_Listing_error_deg": 0.0042879219355686088,
+      "max_H_rad_s": 0.0015514162316949492,
+      "max_angle_difference_from_ode45_deg": 0.012053729700760921
+    },
+    {
+      "step_s": 2.5E-5,
+      "max_Listing_error_deg": 0.00215699783043087,
+      "max_H_rad_s": 0.00077552467927807268,
+      "max_angle_difference_from_ode45_deg": 0.0060211853092360743
+    }
+  ],
+  "matlab_version": "23.2.0.2428915 (R2023b) Update 4",
+  "solver": "ode45 (Dormand-Prince explicit Runge-Kutta)",
+  "relative_tolerance": 1E-10,
+  "absolute_tolerance": 1E-12,
+  "configured_maximum_internal_step_s": 0.001,
+  "maximum_actual_internal_step_s": 0.0010351110778729633,
+  "minimum_actual_internal_step_s": 7.1355267456042038E-5,
+  "accepted_step_count": 691,
+  "saved_sample_spacing_s": 0.0001,
+  "integration_interval_s": [
+    0,
+    0.5
+  ],
+  "plot_interval_s": [
+    0,
+    0.3
+  ],
+  "saved_sample_count": 5001,
+  "proportional_gains_s_minus_2": [
+    3725,
+    4100
+  ],
+  "derivative_gains_s_minus_1": [
+    100,
+    100
+  ],
+  "reference_time_constant_s": 0.02,
+  "yaw_pitch_target_deg": [
+    -28.700000000000003,
+    10.8
+  ],
+  "initial_state": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cartesian_torque_order": [
+    "tau_phi (x)",
+    "tau_theta (y)",
+    "tau_psi (z)"
+  ],
+  "plot_torque_order": [
+    "tau_psi (z)",
+    "tau_theta (y)",
+    "tau_phi (x)"
+  ],
+  "peak_absolute_torque_Nm_cartesian": [
+    3.97318674246867E-7,
+    0.00011551150640453181,
+    0.00028126206764469958
+  ],
+  "simulation_code": "code/figure5/Dynamic_model1210.m",
+  "verification_code": "code/figure5/verify_dynamic_model_integration.m",
+  "roll_and_roll_rate_integrated_independently": true,
+  "roll_projection_used": false,
+  "torque_deadband_used": false,
+  "roll_rate_clamp_used": false,
+  "all_checks_passed": true
+}
